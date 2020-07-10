@@ -28,13 +28,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is the DOM?
 
+    The DOM (document object model) is a tree-like representation of every element on an HTML page, which provides developers (and the applications we build) a way to manipulate the elements on a page, without needing to refresh the entire page.
+
 2. What is an event?
+
+    In short, an event is any single action that happens within the browser. Events range from the page loading completely, or the browser losing network connectivity, to a user clicking on a button or moving the mouse over a particular element within the page, and many, many other things. Almost everything that happens within the browser triggers some type of event.
 
 3. What is an event listener?
 
+    An event listener is a piece of code that is attached to a particular event (such as clicking on a button) that triggers the code to run when the event fires.
+
 4. Why would we convert a NodeList into an Array?
 
+    A NodeList only has a limited number of methods attached to it, and thus has limited functionality. By converting a NodeList into an array we gain the benefit of all array methods such as .map, .filter and .reduce.
+
 5. What is a component?
+
+    A component is a reusable piece of code designed to perform a specific action, or sequence of events (such as constructing an element on a page). Using components allows developers to keep their code DRY, and modular, which makes for more efficient development and performance, and easier debugging. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -44,31 +54,31 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 #### Repository Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: `git push origin <firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: `git checkout -b <firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: `git push origin <firstName-lastName>`
 
 #### Launching the App
 
-- [ ] Navigate to the root of the project with your command line
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file
-- [ ] Run `npm start` to compile the project and serve it
-- [ ] Navigate Chrome to the URL indicated in the output of the `npm start` command
+- [x] Navigate to the root of the project with your command line
+- [x] Run `npm install` to download the dependencies listed in the `package.json` file
+- [x] Run `npm start` to compile the project and serve it
+- [x] Navigate Chrome to the URL indicated in the output of the `npm start` command
 
 ### Task 2: Project Requirements
 
 Your finished project must include all of the following requirements:
 
-- [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
+- [x] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-- [ ] Following the instructions in the `components/Header.js` file, create the Header.
+- [x] Following the instructions in the `components/Header.js` file, create the Header.
 
-- [ ] Following the instructions in the `components/Tabs.js` file, create the Tabs.
+- [x] Following the instructions in the `components/Tabs.js` file, create the Tabs.
 
-- [ ] Following the instructions in the `components/Cards.js` file, create the Cards.
+- [x] Following the instructions in the `components/Cards.js` file, create the Cards.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -77,13 +87,13 @@ In your solution, it is essential that you follow best practices and produce cle
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
 - [ ] Following the instructions in the `components/Carousel.js file`, create the Carousel component.
-- [ ] Render an error message on the page for the user, if the network request to fetch articles fails.
+- [x] Render an error message on the page for the user, if the network request to fetch articles fails.
 - [ ] Use the tabs at the top of the page to filter articles by topic.
 
 ## Submission format
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
+- [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request** (https://github.com/kc0buk/web-sprint-challenge-applied-javascript/pull/1)
+- [x] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
