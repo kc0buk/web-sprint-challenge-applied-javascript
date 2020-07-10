@@ -28,13 +28,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is the DOM?
 
+    The DOM (document object model) is a tree-like representation of every element on an HTML page, which provides developers (and the applications we build) a way to manipulate the elements on a page, without needing to refresh the entire page.
+
 2. What is an event?
+
+    In short, an event is any single action that happens within the browser. Events range from the page loading completely, or the browser losing network connectivity, to a user clicking on a button or moving the mouse over a particular element within the page, and many, many other things. Almost everything that happens within the browser triggers some type of event.
 
 3. What is an event listener?
 
+    An event listener is a piece of code that is attached to a particular event (such as clicking on a button) that triggers the code to run when the event fires.
+
 4. Why would we convert a NodeList into an Array?
 
+    A NodeList only has a limited number of methods attached to it, and thus has limited functionality. By converting a NodeList into an array we gain the benefit of all array methods such as .map, .filter and .reduce.
+
 5. What is a component?
+
+    A component is a reusable piece of code designed to perform a specific action, or sequence of events (such as constructing an element on a page). Using components allows developers to keep their code DRY, and modular, which makes for more efficient development and performance, and easier debugging. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -84,6 +94,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request**
+- [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request** (https://github.com/kc0buk/web-sprint-challenge-applied-javascript/pull/1)
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
