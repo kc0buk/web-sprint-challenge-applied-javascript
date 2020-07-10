@@ -25,24 +25,38 @@ const articlesEndpoint = `https://lambda-times-backend.herokuapp.com/articles`
 const cardsParent = document.querySelector(`.cards-container`)
 // console.log(cardsParent)
 
+// let articleList = []
+
 axios.get(articlesEndpoint)
     .then( response => {
         let articles = response.data.articles
         // console.log(articles)
         for (let obj in articles) {
+            // console.log(obj)
             articles[obj].forEach( item => {
                 let card = articleMaker(item)
                 // console.log(card)
                 cardsParent.appendChild(card)
             })
         }
+    //    articleList = articles
+    //    const articleArray = Array.from(articleList)
+    //    console.log(articleArray)
+    // //    articleList.forEach(`click`, (e) => {
+    // //         console.log(e)
+    // //    })
     })
     .catch( err => {
         console.log(`There was an error. The error is ${err}`)
+        const error = document.createElement(`div`)
+        const errorHeadline = document.createElement(`h3`)
+        errorHeadline.textContent = `Sorry! There was a problem fetching the articles you requested. Please try again.`
+        error.appendChild(errorHeadline)
+        cardsParent.appendChild(error)
     })
 
+
 function articleMaker(obj) {
-    // console.log(obj.headline)
     // Card Div
     const cardDiv = document.createElement(`div`)
     cardDiv.classList.add(`card`)
@@ -81,3 +95,4 @@ function articleMaker(obj) {
 
     return cardDiv
 }
+

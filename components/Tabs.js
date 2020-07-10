@@ -22,8 +22,10 @@ axios.get(topicsEndpoint)
         topics.forEach ( item => {
             const topicDiv = document.createElement(`div`)
             topicDiv.classList.add(`tab`)
+            // topicDiv.classList.add(item)
             topicDiv.textContent = item.toUpperCase()
             topicsParent.appendChild(topicDiv)
+
         })
     })
     .catch( err => {
