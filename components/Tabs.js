@@ -10,11 +10,11 @@ import axios from 'axios'
 //    <div class="tab">topic here</div>
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
-
+const topicsEndpoint = `https://lambda-times-backend.herokuapp.com/topics`
 const topicsParent = document.querySelector(`.topics`)
 // console.log(topicsParent)
 
-axios.get(`https://lambda-times-backend.herokuapp.com/topics`)
+axios.get(topicsEndpoint)
     .then( response => {
         let topics = response.data.topics
         topics.unshift(`all`)
